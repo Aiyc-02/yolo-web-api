@@ -37,9 +37,32 @@ pip install -r requirements.txt
 ```
 ### 3. 启动服务
 ```bash
-python app.py、
+python app.py
 ```
 注意：首次运行会在本地自动下载轻量级的 yolov8n.pt 模型权重文件（约 6MB），请保持网络畅通。
 ### 4. 访问系统
 终端提示“模型加载完成！”后，打开浏览器访问：
 👉 http://127.0.0.1:8000/
+
+🌍 外网访问 (Cpolar 内网穿透)
+如果您想将运行在自己电脑上的平台分享给其他人访问，可以使用项目内置的脚本：
+
+确保您的电脑上已安装并配置好 Cpolar（默认安装路径需为 D:\cpolar）。
+
+双击运行项目中的 cpolar.bat。
+
+终端会生成一个公网 URL（例如 http://xxxx.cpolar.cn），其他人通过此链接即可直接访问您的 Web 平台！
+🔌 API 接口文档
+如果你想将该检测能力接入其他系统（如小程序、App），可以直接调用后端 API：
+
+接口地址: /detect
+
+请求方式: POST
+
+内容类型: multipart/form-data
+
+请求参数:
+
+file: 上传的图像文件（必填）
+
+响应内容: 直接返回画好检测框的 image/jpeg 图片二进制数据流。如果出错，则返回 JSON 格式报错信息。
