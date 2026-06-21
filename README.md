@@ -2,7 +2,6 @@
 
 基于 FastAPI 与 YOLO26 引擎构建的云端目标检测 Web 平台。本项目采用轻量化的前后端分离架构，通过 Python 后端统一接管模型推理与静态网页托管，开箱即用。
 <img width="1850" height="972" alt="PixPin_2026-06-21_16-27-34" src="https://github.com/user-attachments/assets/ad114f2c-5c5a-447f-8ef1-22bf7f42f1f3" />
-拖拽到这里，GitHub会自动生成链接替换掉这段文字)
 ## ✨ 核心特性
 
 - **开箱即用的前端 UI**：内置基于 Tailwind CSS 编写的响应式网页，支持点击或拖拽上传 JPG/PNG 格式图片，并带有加载动画提示。
