@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles  # 【新增这一行】
 from ultralytics import YOLO
 
-app = FastAPI(title="YOLOv8 Web API")
+app = FastAPI(title="YOLO26 Web API")
 
 app.add_middleware(
     CORSMiddleware,
@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 print("正在加载 YOLO 模型...")
-model = YOLO("yolov8n.pt")
+model = YOLO("yolo26n.pt")
 print("模型加载完成！")
 
 
