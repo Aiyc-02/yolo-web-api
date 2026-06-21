@@ -51,7 +51,10 @@ python app.py
 
 双击运行项目中的 cpolar.bat。
 
-终端会生成一个公网 URL（例如 http://xxxx.cpolar.cn），其他人通过此链接即可直接访问您的 Web 平台！
+终端会生成一个公网 URL（如下图红框所示），其他人通过此链接即可直接访问您的 Web 平台！
+![前端界面展示](将第一张图片拖拽到这里，G<img width="1481" height="396" alt="PixPin_2026-06-21_16-22-31" src="https://github.com/user-attachments/assets/d47949a0-7bef-4267-961c-b1de3d5964c1" />
+itHub会自动生成链接替换掉这段文字)
+
 ## 🔌 API 接口文档
 如果你想将该检测能力接入其他系统（如小程序、App），可以直接调用后端 API：
 
